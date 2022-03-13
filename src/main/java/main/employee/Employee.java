@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Employee {
-    private static long countId;
+    private static long countId = 0;
 
     private final long id = countId++;
     private String firstName;

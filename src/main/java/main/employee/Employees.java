@@ -36,12 +36,16 @@ public final class Employees {
             addEmployee(employee);
     }
 
-    public Employee removeEmployee(Employee employee) {
-        return list.remove(employee.getId());
+    public Employee getEmployee(long id) {
+        return list.get(id);
     }
 
-    public List<Employee> getEmployees() {
+    public ArrayList<Employee> getEmployees() {
         return new ArrayList<>(list.values());
+    }
+
+    public Employee removeEmployee(long id) {
+        return list.remove(id);
     }
 
     public void displayEmployees() {
